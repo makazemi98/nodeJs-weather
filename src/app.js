@@ -9,7 +9,7 @@ console.log('Dirname : ',__dirname)
 console.log('Filename : ',__filename)
 */
 const app = express();
-
+const port = process.env.PORT || 3000 ;
 
 // Define path express config
 const publicDirPath = path.join(__dirname,'../public')

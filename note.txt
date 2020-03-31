@@ -5,3 +5,16 @@ ssh-keygen -t rsa -b 4096 -C "mohammadalikazemi98@gmail.com"
 eval "$(ssh-agent -s)"
 
 ssh-add -k  ~/.ssh/id_rsa
+
+////
+
+cat ~/.ssh/id_rsa.pub   ====> copy in setting sshKey .
+
+ssh -T git@github.com
+
+//// heroku 
+
+heroku keys:add 
+
+heroku create mead-weather-makazemi 
+  =======>  "https://mead-weather-makazemi.herokuapp.com/ | https://git.heroku.com/mead-weather-makazemi.git"
