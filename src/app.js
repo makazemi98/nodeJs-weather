@@ -47,7 +47,7 @@ hbs.registerHelper('if_eq', function(a, b, opts) {
 
 // 2
 
-app.get('',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('index',{
         title:"Home page",
         name:'MAK',
