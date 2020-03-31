@@ -86,7 +86,7 @@ app.get('/help/*',(req,res)=>{
 
 app.get('/products',(req,res)=>{
     
-    console.log(req.query.search)
+    // console.log(req.query.search)
     if(!req.query.search){
         return res.send({
             error:"You must provide a search term"
@@ -136,6 +136,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log(`Server is running in port 3000`.toString().toUpperCase())
 })
